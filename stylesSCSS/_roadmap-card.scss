@@ -1,0 +1,64 @@
+.roadmap__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+
+    width: 37rem;
+    height: auto;
+
+    background: url(../img/rectangle-roadmap.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &--image {
+        width: 95%;
+        margin: .5rem auto;
+    }
+
+    &--title {
+        color: #fff;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 33px;
+        padding: 2rem 3rem 0;
+    }
+
+    &--separator {
+        height: 2rem;
+        width: 70%;
+        background-image: url("../img/roadmap-separator.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        border: none;
+        margin: 0 3rem;
+    }
+
+    &--list {
+        list-style-type: none;
+        padding: 2rem 3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & li {
+            padding-left: 20px;
+            background-image: url(../img/list-icon.png);
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size: 16px;
+            padding-left: 30px;
+        }
+
+        &-item {
+            color: #fff;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 30px;
+        }
+    }
+}
+
+
