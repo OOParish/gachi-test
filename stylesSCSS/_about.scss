@@ -15,7 +15,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #5DE5EE url(/img/bg-matrix.svg) no-repeat center/cover;
+        background: #5DE5EE url(../img/bg-matrix.svg) no-repeat center/cover;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: -10;
@@ -57,7 +57,7 @@
 
         &__separator-1 {
             height: 2rem;
-            background-image: url("/img/about-separator-1.png");
+            background-image: url("../img/about-separator-1.png");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -75,7 +75,7 @@
             margin-top: 2rem;
             height: 2rem;
             width: 50%;
-            background-image: url("/img/about-separator-2.png");
+            background-image: url("../img/about-separator-2.png");
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;

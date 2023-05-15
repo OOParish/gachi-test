@@ -12,11 +12,11 @@
         animation: slideBackground 10s linear infinite;
 
     &.billy {
-        background: url(/img/purple-outline-rectangle.png) no-repeat center;
+        background: url(../img/purple-outline-rectangle.png) no-repeat center;
     }
 
     &.van {
-        background: url(/img/turquoise-outline-rectangle.png) no-repeat center;
+        background: url(../img/turquoise-outline-rectangle.png) no-repeat center;
     }
 
     &-billy {
@@ -50,11 +50,11 @@
         align-items: center;
 
         &.turq {
-            background-image: url("/img/turquoise-rectangle.png");
+            background-image: url("../img/turquoise-rectangle.png");
         }
 
         &.purple {
-            background-image: url("/img/purple-rectangle.png");
+            background-image: url("../img/purple-rectangle.png");
         }
 
         background-size: cover;
@@ -63,7 +63,7 @@
     &-footer-dark {
         height: 90%;
         width: 90%;
-        background-image: url("/img/dark-rectangle.png");
+        background-image: url("../img/dark-rectangle.png");
         background-size: cover;
 
         display: flex;
