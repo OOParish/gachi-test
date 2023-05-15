@@ -1,0 +1,68 @@
+.buy-section {
+    overflow: hidden;
+    padding: 6rem 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FF62FA;
+    z-index: -1;
+
+    .bnt-container {
+        position: relative;
+        text-align: center;
+        padding: 6rem 0;
+    }
+
+    .btn-buy {
+        position: relative;
+        z-index: 2;
+        width: 35rem;
+        margin: 3rem auto;
+        transition: all .3s;
+
+        &:hover {
+            transform: translateY(1rem) scale(1.05);
+        }
+
+        &:active {
+            transform: translateY(-.5rem);
+        }
+    }
+
+    &-baywatch {
+        height: 170%;
+        z-index: 1;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media (max-width: 769px) {
+    .buy-section {
+        padding: 3rem 0;
+
+        .bnt-container {
+            padding: 3rem 0;
+        }
+
+        .btn-buy {
+            width: 30rem;
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .buy-section {
+        padding: 2rem 0;
+
+        .bnt-container {
+            padding: 2rem 0;
+        }
+
+        .btn-buy {
+            width: 20rem;
+        }
+    }
+}

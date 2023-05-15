@@ -1,0 +1,23 @@
+.marque {
+    max-width: 100%;
+    overflow: hidden;
+
+    &__container {
+        margin: .5rem auto;
+        display: flex;
+        width: 200%;
+        gap: 3rem;
+        animation: marque-infinite 15s linear infinite;
+
+        & h1 {
+            color: rgba(#FFFFFF, .3);
+            font-size: 2rem;
+            white-space: nowrap;
+            flex: 1;
+        }
+    }
+
+    .reverse {
+        animation-direction: reverse;
+    }
+}

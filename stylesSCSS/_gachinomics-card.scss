@@ -1,0 +1,124 @@
+.gachinomics__card {
+    position: relative;
+    color: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+
+    background-size: 30% 60%;
+        animation: slideBackground 10s linear infinite;
+
+    &.billy {
+        background: url(/img/purple-outline-rectangle.png) no-repeat center;
+    }
+
+    &.van {
+        background: url(/img/turquoise-outline-rectangle.png) no-repeat center;
+    }
+
+    &-billy {
+        transform: translateY(20%);
+        position: relative;
+        width: 40%;
+        z-index: -1;
+    }
+
+    &-van {
+        transform: translateY(20%);
+        position: relative;
+        width: 40%;
+        z-index: -1;
+
+    }
+
+    & .purple .gachinomics__card-percent {
+        text-shadow: #FF62FA -.3rem .2rem;
+    }
+
+    & .turq .gachinomics__card-percent {
+        text-shadow: #5DE5EE -.3rem .2rem;
+    }
+
+    &-footer {
+        width: 45%;
+        height: 18rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.turq {
+            background-image: url("/img/turquoise-rectangle.png");
+        }
+
+        &.purple {
+            background-image: url("/img/purple-rectangle.png");
+        }
+
+        background-size: cover;
+    }
+
+    &-footer-dark {
+        height: 90%;
+        width: 90%;
+        background-image: url("/img/dark-rectangle.png");
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem 2rem;
+    }
+
+    &-percent {
+        color: white;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+
+    &-text {
+        color: white;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 2.4rem;
+        line-height: 3rem;
+        text-transform: uppercase;
+    }
+}
+
+
+@media (max-width: 1280px) {
+    .gachinomics {
+        &__card-percent {
+            font-size: 4rem;
+        }
+
+        &__card-text {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .gachinomics__card {
+
+        &-footer,
+        &-billy,
+        &-van {
+            width: 100%;
+        }
+
+        &.billy{
+            background-size: 80% 60%;
+        }
+
+        &.van {
+            background-size: 80% 60%;
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.bucks-fan {
+    position: relative;
+    flex: 1;
+
+    &__bucks {
+        position: absolute;
+        width: 100%;
+        left: -20%;
+
+        top: 50%;
+        transform: translateY(-50%) rotate(-10deg);
+
+        &.bucks-1 {
+            animation: infinity-bucks-1 5s linear infinite;
+        }
+
+        &.bucks-2 {
+            animation: infinity-bucks-2 5s linear infinite;
+        }
+
+        &.bucks-3 {
+            animation: infinity-bucks-3 5s linear infinite;
+        }
+    }
+}
+
+@media (max-width: 1370px) {
+    .bucks-fan__bucks {
+        left: -10%;
+        top: 50%;
+    }
+}
+
+@media (max-width: 1045px) {
+    .bucks-fan__bucks {
+        width: 140%;
+        left: -50%;
+        top: 60%;
+    }
+}
+
+@media (max-width: 769px) {
+    .bucks-fan {
+        height: 45rem;
+        width: 70%;
+        margin: auto;
+        flex: auto;
+        order: 1;
+
+        &__bucks {
+            width: 100%;
+            top: 50%;
+            left: auto;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .bucks-fan {
+        height: 35rem;
+        width: 70%;
+    }
+}
+
+@media (max-width: 420px) {
+    .bucks-fan {
+        overflow: hidden;
+        width: 90%;
+    }
+}

@@ -1,0 +1,63 @@
+@keyframes nimbus-rotate {
+    to {
+        transform: translate(-50%, 50%) rotate(360deg);
+    }
+}
+
+@keyframes infinity-bucks-1 {
+    0% {
+        transform: translateY(-50%) rotate(-10deg);
+
+    }
+
+    50% {
+        transform: translateY(-50%) rotate(-40deg);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(-10deg);
+    }
+}
+
+@keyframes infinity-bucks-2 {
+    0% {
+        transform: translateY(-50%) rotate(-10deg);
+
+    }
+
+    50% {
+        transform: translateY(-50%) rotate(-25deg);
+    }
+
+    100% {
+        transform: translateY(-50%) rotate(-10deg);
+    }
+}
+
+@keyframes marque-infinite {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 50% 60%;
+    }
+
+    25% {
+        background-position: 40% 60%;
+    }
+
+    75% {
+        background-position: 60% 60%;
+    }
+
+    100% {
+        background-position: 50% 60%;
+    }
+}
