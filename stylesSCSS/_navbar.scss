@@ -56,7 +56,7 @@
         position: absolute;
         transform: rotate(180deg);
         width: 100%;
-        width: 300%;
+        width: 400%;
         bottom: 0;
     }
 }
@@ -79,9 +79,9 @@
 
 .close-btn {
     position: absolute;
-    right: 20px;
-    top: 20px;
-    font-size: 30px;
+    right: 2.5rem;
+    top: 2.5rem;
+    font-size: 5rem;
     color: #121211;
     cursor: pointer;
 }
