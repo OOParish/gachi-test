@@ -9,7 +9,8 @@
     z-index: -2;
 
     background-size: 30% 60%;
-        animation: slideBackground 10s linear infinite;
+    background-position: 50% 60%;
+    animation: slideBackground 10s linear infinite;
 
     &.billy {
         background: url(../img/purple-outline-rectangle.png) no-repeat center;
@@ -106,14 +107,14 @@
 
 @media (max-width: 769px) {
     .gachinomics__card {
-
+        animation: slideBackground2 5s linear infinite;
         &-footer,
         &-billy,
         &-van {
             width: 100%;
         }
 
-        &.billy{
+        &.billy {
             background-size: 80% 60%;
         }
 

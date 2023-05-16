@@ -2,10 +2,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    
+
 
     width: 37rem;
-    height: auto;
+    height: 45.5rem;
 
     background: url(../img/rectangle-roadmap.png) no-repeat;
     background-position: center;
@@ -14,13 +14,15 @@
     &--image {
         width: 95%;
         margin: .5rem auto;
+        -webkit-clip-path: polygon(100% 100%, 0 100%, 0 0, 95% 0, 100% 12%);
+        clip-path: polygon(100% 100%, 0 100%, 0 0, 95% 0, 100% 12%);
     }
 
     &--title {
         color: #fff;
         font-weight: 900;
-        font-size: 26px;
-        line-height: 33px;
+        font-size: 2.6rem;
+        line-height: 3.3rem;
         padding: 2rem 3rem 0;
     }
 
@@ -44,12 +46,11 @@
         justify-content: center;
 
         & li {
-            padding-left: 20px;
             background-image: url(../img/list-icon.png);
             background-repeat: no-repeat;
             background-position: left center;
-            background-size: 16px;
-            padding-left: 30px;
+            background-size: 1.6rem;
+            padding-left: 3rem;
         }
 
         &-item {
@@ -61,4 +62,33 @@
     }
 }
 
+@media (max-width: 380px) {
+    .roadmap__card {
 
+        width: 27.7rem;
+        height: 34.1rem;
+
+        &--image {
+            margin: 0 auto;
+        }
+        padding: .5rem;
+
+        &--title {
+            font-size: 2rem;
+            padding: 1rem 2rem 0;
+            line-height: 2rem;
+        }
+
+        &--list {
+            padding: 1rem 1.5rem;
+            &-item {
+                font-size: 1rem;
+            }
+
+            & li {
+                padding-left: 2rem;
+                background-size: 1.2rem;
+            }
+        }
+    }
+}

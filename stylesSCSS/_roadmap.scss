@@ -6,6 +6,12 @@
         width: 100%;
     }
 
+    & .separation-img2 {
+        position: absolute;
+        width: 100%;
+        transform: rotate(180deg) translateY(100%);
+    }
+
     &::before {
         content: "";
         position: absolute;

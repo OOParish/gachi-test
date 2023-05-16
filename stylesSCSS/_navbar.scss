@@ -8,9 +8,12 @@
         color: #f2f2f2;
         text-decoration: none;
         font-size: 1.7rem;
+        transition: all .2s;
+        text-transform: uppercase;
     }
 
     &__item:hover {
+        transform: scale(1.1);
         color: #5DE5EE;
     }
 }
@@ -19,7 +22,6 @@
     position: absolute;
     z-index: 1;
     display: none;
-    color: #f2f2f2;
     right: 5%;
     top: 3%;
     background: linear-gradient(180deg, #5DE5EE 0%, #FF62FA 100%);
@@ -27,41 +29,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+    border: none;
     text-decoration: none;
     padding: 0 .5rem .5rem;
     font-size: 3.5rem;
-}
-
-@media (max-width: 980px) {
-    .navbar {
-        &__item,
-        &__item:visited {
-            font-size: 1.5rem;
-        }
-    }
-}
-
-@media (max-width: 880px) {
-    .navbar {
-        &__item,
-        &__item:visited {
-            font-size: 1.4rem;
-        }
-    }
-}
-
-@media (max-width: 769px) {
-    .navbar {
-        & a {
-            visibility: hidden;
-            display: none;
-        }
-
-        margin: 0;
-    }
-    .menu-btn {
-        display: block;
-    }
 }
 
 .modal {
@@ -101,11 +72,44 @@
 
 .close-btn {
     position: absolute;
-    right: 2.5rem;
+    right: 4rem;
     top: 2.5rem;
     font-size: 5rem;
-    color: #121211;
+    color: #fff;
     cursor: pointer;
+}
+
+
+@media (max-width: 1280px) {
+    .navbar {
+        &__item,
+        &__item:visited {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .navbar {
+        &__item,
+        &__item:visited {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .navbar {
+        & a {
+            visibility: hidden;
+            display: none;
+        }
+
+        margin: 0;
+    }
+    .menu-btn {
+        display: block;
+    }
 }
 
 

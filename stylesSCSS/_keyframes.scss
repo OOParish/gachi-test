@@ -61,3 +61,21 @@
         background-position: 50% 60%;
     }
 }
+
+@keyframes slideBackground2 {
+    0% {
+        background-position: 50% 60%;
+    }
+
+    25% {
+        background-position: 10% 60%;
+    }
+
+    75% {
+        background-position: 90% 60%;
+    }
+
+    100% {
+        background-position: 50% 60%;
+    }
+}
